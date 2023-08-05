@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;700&display=swap");
+
+body {
+  margin: 0;
+
+  font-family: "Barlow Condensed", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+a {
+  text-decoration: none;
+}
+.app {
+  position: relative;
+  min-height: 100vh;
+}
+/* Spinner */
+.loadingSpinnerContainer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 5000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loadingSpinner {
+  width: 64px;
+  height: 64px;
+  border: 8px solid;
+  border-color: #000 transparent #555 transparent;
+  border-radius: 50%;
+  animation: spin 1.2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* Footer */
+.footer {
+  position: absolute;
+  width: 100vw;
+  bottom: 0;
+  height: 3rem;
+  background-color: rgb(31, 30, 30);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footerParagraph {
+  margin: 0;
+  font-weight: 500;
+  font-size: 20px;
+}
+/* Contact Item */
+.column {
+  display: flex;
+  justify-content: space-between;
+}
+.button {
+  border: none;
+  background-color: white;
+}
+.arrow {
+  opacity: 0.6;
+  transition: 0.3s;
+}
+.arrow:hover {
+  opacity: 2;
+}
+
+.edit {
+  opacity: 0.6;
+  transition: 0.3s;
+  color: aqua;
+}
+.edit:hover {
+  opacity: 2;
+}
+.trash {
+  opacity: 0.6;
+  transition: 0.3s;
+  color: rgb(255, 51, 0);
+}
+.trash:hover {
+  opacity: 2;
+}
+
+/* Button */
+.btN {
+  padding: 10px 20px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  background: #000;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  text-align: center;
+  appearance: button;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btN svg {
+  margin-right: 8px;
+}
+
+.btn-reverse {
+  background: #fff;
+  color: #000;
+}
+
+.btn-block {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.btn-sm {
+  padding: 5px 15px;
+  font-size: 13px;
+}
+
+.btn-back {
+  width: 150px;
+  margin-bottom: 20px;
+}
+.btn-back:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.btN:hover {
+  transform: scale(0.98);
+}
+
+.back {
+  padding-left: 1rem;
+}
