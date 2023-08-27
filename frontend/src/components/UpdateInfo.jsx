@@ -15,7 +15,7 @@ const UpdateInfo = () => {
   useEffect(() => {
     dispatch(getContact(contactId));
   }, [contactId, dispatch]);
-  const [name, setName] = useState(contact?.name);
+  const [name, setName] = useState("" || contact?.name);
   const [email, setEmail] = useState("" || contact?.email);
   const [phone, setPhone] = useState("" || contact?.phone);
 

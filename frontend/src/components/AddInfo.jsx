@@ -20,13 +20,13 @@ const AddInfo = () => {
     }
     if (isSuccess) {
       dispatch(reset());
-      navigate("/");
+      navigate("/contact");
     }
   }, [dispatch, isError, isSuccess, message, navigate]);
-
+  const contactData = { name: name, email: email, phone: phone };
   const onSubmit = (e) => {
     e.preventDefault();
-    const contactData = { name, email, phone };
+
     dispatch(createContact(contactData));
   };
   if (isLoading) {

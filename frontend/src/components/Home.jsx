@@ -12,11 +12,14 @@ const Home = () => {
         <ol>
           <li>React Components and Jsx.</li>
           <li>React Router.</li>
-          <li>Context api for global state management</li>
+          <li>React Redux and ReduxJs/toolkit for state management</li>
+          <li>MonogoDB for storing data to the database</li>
+          <li>Nodejs and ExpressJs for the backend</li>
+          <li>Jsonwebtoken for authentication</li>
           <li>
-            Making asynchronous calls to the json placeholder fake rest api
-            using "async/await"
+            Bcryptjs for hashing the password before storing to the database
           </li>
+          <li>Render for hosting </li>
         </ol>
         <div className="py-2">
           <Link to="/add" className="btN btn-reverse btn-block">
